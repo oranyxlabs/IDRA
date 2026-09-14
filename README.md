@@ -160,7 +160,6 @@ Dual‑System Output Format
 IDRA produces two outputs:
 
 thread_a — Raw Model Answer  
-Unchanged text.
 
 thread_b — Full Audit Trace  
 Includes:
@@ -176,74 +175,6 @@ Includes:
 - error gradient  
 - refinement cycle metadata  
 - latent reasoning exposure (hypotheses, conflicts, uncertainty, clusters, CoT)  
-
-
-Telemetry‑Driven Training
-
-IDRA’s audit trace becomes a reasoning‑distillation dataset, enabling training of new models that:
-
-- reason more coherently  
-- calibrate confidence  
-- expose uncertainty  
-- detect conflicts  
-- follow alignment rubrics  
-- generate structured reasoning natively  
-
-Each governed interaction produces a training example containing:
-
-- input  
-- raw output  
-- hypotheses  
-- latent factors  
-- conflicts  
-- uncertainty map  
-- conceptual clusters  
-- chain‑of‑thought  
-- confidence signals  
-- alignment scores  
-- error gradients  
-- penalties  
-
-This dataset trains models to think in IDRA’s reasoning language.
-
-
-Reasoning‑Distillation Architecture (RDA)
-
-A model trained on IDRA telemetry learns to:
-
-- generate answers  
-- generate structured reasoning  
-- calibrate confidence  
-- expose uncertainty  
-- follow alignment rubrics  
-- self‑correct  
-
-RDA can operate as:
-
-- a reasoning‑first assistant  
-- an auditor for other models  
-- a multi‑agent collaborator  
-- a teacher model for distillation  
-
-Losses include:
-
-- cross‑entropy on answer  
-- cross‑entropy on reasoning text  
-- numeric loss on confidence, uncertainty, alignment  
-
-
-Multi‑Agent Collaboration
-
-IDRA enables stable multi‑agent systems:
-
-- each agent maintains its own state vector  
-- agents exchange telemetry, not raw text  
-- agents negotiate using hypotheses, conflicts, uncertainty, CoT  
-- agents remain distinct—no identity collapse  
-- cross‑agent calibration emerges naturally  
-
-This produces cooperative, evidence‑aware ensembles.
-
 
 Example Behavior
 
