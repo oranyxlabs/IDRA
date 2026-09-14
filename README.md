@@ -1,5 +1,5 @@
-The Interpretability‑Driven Reasoning Architecture Evaluator (IDRA)  
-A Runtime Framework for Calibrated, Coherent, Multi‑Agent, and Self‑Correcting Large Language Models
+The Interpretability Driven Reasoning Architecture Reconstruction Auditor 
+A Runtime Framework for Calibrated, Coherent and Self‑Correcting Large Language Models 
 
 
 Overview
